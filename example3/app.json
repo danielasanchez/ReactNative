@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "example3",
+    "description":"ActivityIndicator",
     "slug": "example3",
     "version": "1.0.0",
     "orientation": "portrait",
