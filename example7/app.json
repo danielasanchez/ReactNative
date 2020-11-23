@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "example6",
-    "slug": "example6",
-    "description":"BottomTabNavigator",
+    "name": "example7",
+    "slug": "example7",
+    "description":"MaterialTopTabNavigator",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
