@@ -35,6 +35,7 @@ export default function DrawerNavigator1(){
                 name="Home"
                 component={HomeScreen}
                 options={{
+                    headerShown:false,
                     drawerLabel:"Inicio",
                     drawerIcon:({color})=>(
                         <Ionicons name={"ios-home"} size={20} color={color}/>
@@ -47,6 +48,7 @@ export default function DrawerNavigator1(){
                 name="Settings"
                 component={SettingsScreen}
                 options={{
+                    headerShown:false,
                     drawerLabel:"Configuración",
                     drawerIcon:({color})=>(
                         <Ionicons name={"ios-settings"} size={20} color={color}/>
@@ -58,6 +60,7 @@ export default function DrawerNavigator1(){
                 name="About"
                 component={AboutScreen}
                 options={{
+                    headerShown:false,
                     drawerLabel:"Acerca de",
                     drawerIcon:({color})=>(
                         <Ionicons name={"ios-help-circle"} size={20} color={color}/>
