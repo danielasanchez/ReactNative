@@ -1,12 +1,16 @@
 import React, {useContext} from 'react';
 import {TextInput, View, StyleSheet, Text} from 'react-native';
-import {Button} from 'react-native-elements'
+import { Button } from '@rneui/themed';
+//import {Button} from 'react-native-elements'
 import {Picker} from '@react-native-picker/picker';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
 import {AlumnosContext} from '../Context/AlumnosContext';
 import Constants from 'expo-constants';
-import firebase from '../Settings/ConfigFirebase'
+//import firebase from '../Settings/ConfigFirebase'
+import {firebase} from '../Settings/ConfigFirebase';
+import { ref, update } from 'firebase/database';
+
 
 const validations =Yup.object().shape({
     matricula:Yup.number().typeError('Este campo es numérico').max(99999999,"Número muy grande").required('Obligatorio'),
@@ -27,9 +31,17 @@ export default function Formulario({route,navigation}){
             <Formik
                 initialValues={alumno}
                 onSubmit={(values,{resetForm})=>{
+
+                    update(ref(firebase, 'Alumnos/' + alumno.matricula), alumno)
+                    .then(() => {
+                        alert("Enviado")
+                    })
+
+                    /* version anterior
                      firebase.database().ref('Alumnos/'+alumno.matricula).update(alumno).then(()=>{
                          alert("Enviado")
                      })
+                    */
                     const temporal = lista.filter(al=>al.matricula!=alumno.matricula);//!==
                     //alert('enviado')
                     setLista([...temporal,alumno]);
@@ -41,12 +53,12 @@ export default function Formulario({route,navigation}){
                     })
                     navigation.goBack();
 
-                    console.log(lista) 
+                    //console.log(lista) 
                 }}
                 validationSchema={validations}
                 validate={(values)=>{
                     setAlumno(values)
-                    console.log(alumno)
+                    //console.log(alumno)
                 }}
             >
             {

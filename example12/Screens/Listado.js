@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
-import {ListItem, Header} from 'react-native-elements';
+import { ListItem, Header } from '@rneui/themed';
+//import {ListItem, Header} from 'react-native-elements';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {AlumnosContext} from '../Context/AlumnosContext';
 
@@ -9,8 +10,6 @@ import {AlumnosContext} from '../Context/AlumnosContext';
 const Listado = ({navigation}) => {
 
     const {lista, setAlumno,eliminar} = useContext(AlumnosContext);
-    
-
 
     return (
     
@@ -62,11 +61,7 @@ const Listado = ({navigation}) => {
 
 
         }
-
-
         </ScrollView>
-
-
     </View>
     );
 }
