@@ -4,12 +4,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import StackNavigation1 from './Navigations/StackNavigation1'
 import BottomTabNavigator1 from './Navigations/BottomTabNavigator1';
-import TopTapNavigator1 from './Navigations/TopTapNavigator1'
+import TopTabNavigator1 from './Navigations/TopTabNavigator1'
 
 export default function App() {
   return (
       <NavigationContainer>
-        <TopTapNavigator1/>
+        <TopTabNavigator1/>
       </NavigationContainer>
   );
 }

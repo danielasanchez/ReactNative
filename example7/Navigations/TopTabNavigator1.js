@@ -1,28 +1,29 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import SettingsScreen from '../Screens/SettingsScreen';
 import AboutScreen from '../Screens/AboutScreen';
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import HomeScreen from '../Navigations/StackNavigation1';
+import HomeScreen from './StackNavigation1';
+import Constants from 'expo-constants';
 
-const Tab = createBottomTabNavigator();
+const Tab = createMaterialTopTabNavigator();
 
-export default function BottomTabNavigator1() {
+export default function TopTabNavigator1() {
     return (
         <Tab.Navigator
             initialRouteName="Settings"
-            screenOptions={{ //Versiones anteriores tabBarOptions
-                tabBarActiveTintColor: '#ff6600',//activeTintColor
+            screenOptions={{//Versiones anteriores tabBarOptions
+                tabBarActiveTintColor: "#ff6600",//activeTintColor
                 tabBarInactiveTintColor: "#060606",//inactiveTintColor
+                tabBarShowIcon: true,//showIcon
                 tabBarShowLabel: true,//showLabel
-                tabBarLabelStyle: { //labelStyle
-                    fontSize: 12
+                tabBarLabelStyle: {//labelStyle
+                    fontSize: 11
                 },
                 tabBarStyle: {//style
-                    paddingBottom: 5,
+                    paddingTop: Constants.statusBarHeight,
                     backgroundColor: "#f3f3f1"
                 }
-
             }}
         >
 
