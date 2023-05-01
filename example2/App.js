@@ -1,8 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View, Platform } from 'react-native';
-import Constants  from 'expo-constants';
-
+import { StyleSheet, Text, View, Plataform } from 'react-native';
+import Constants from 'expo-constants';
 
 export default function App() {
   return (
