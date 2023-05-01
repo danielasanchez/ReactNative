@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
-import {Header} from 'react-native-elements';
+//import {Header} from 'react-native-elements';
+import { Header } from '@rneui/themed';
 
 const HomeScreen = ({navigation}) => {
     return (

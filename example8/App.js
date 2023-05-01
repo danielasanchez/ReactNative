@@ -2,9 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import StackNavigation1 from './Navigations/StackNavigation1'
-import BottomTabNavigator1 from './Navigations/BottomTabNavigator1';
-import TopTapNavigator1 from './Navigations/TopTapNavigator1'
+//import StackNavigation1 from './Navigations/StackNavigation1'
+//import BottomTabNavigator1 from './Navigations/BottomTabNavigator1';
+//import TopTabNavigator1 from './Navigations/TopTabNavigator1'
 import DrawerNavigator1 from './Navigations/DrawerNavigator1';
 
 export default function App() {

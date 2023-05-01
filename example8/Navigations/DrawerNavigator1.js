@@ -12,13 +12,19 @@ export default function DrawerNavigator1(){
     return(
         <Drawer.Navigator
             initialRouteName="Home"
+            /*
             drawerStyle={{
                 backgroundColor:'#ffff',
                 width:'80%'
             }}
-            drawerContentOptions={{
-                activeTintColor:"#ff6600",
-                inactiveTintColor:"#060606"
+            */
+            screenOptions={{//drawerContentOptions
+                drawerStyle:{
+                    backgroundColor:'#ffff',
+                    width:'80%'
+                },
+                drawerActiveTintColor:"#ff6600",//activeTintColor
+                drawerInactiveTintColor:"#060606"//inactiveTintColor
             }}
             drawerContent={(props)=>
                 <DrawerContentScrollView {...props}>
