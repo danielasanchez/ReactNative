@@ -11,14 +11,14 @@ export default function BottomTabNavigator1(){
     return(
         <Tab.Navigator
             initialRouteName="Settings"
-            tabBarOptions={{
-                activeTintColor:"#ff6600",
-                inactiveTintColor:"#060606",
-                showLabel:true,
-                labelStyle:{
+            screenOptions={{ //Versiones anteriores tabBarOptions
+                tabBarActiveTintColor: '#ff6600',//activeTintColor
+                tabBarInactiveTintColor:"#060606",//inactiveTintColor
+                tabBarShowLabel:true,//showLabel
+                tabBarLabelStyle:{ //labelStyle
                     fontSize:12
                 },
-                style:{
+                tabBarStyle:{//style
                     paddingBottom:5,
                     backgroundColor:"#f3f3f1"
                 }
