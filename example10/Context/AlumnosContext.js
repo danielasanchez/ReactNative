@@ -13,10 +13,6 @@ const AlumnosProvider = (props)=>{
 
     const [lista, setLista]= useState([]);
 
-
-
-
-
     return(
         <AlumnosContext.Provider
             value={{

@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import {TextInput, View, StyleSheet, Text} from 'react-native';
-import {Button} from 'react-native-elements'
+import { Button } from '@rneui/themed';
+//import {Button} from 'react-native-elements'
 import {Picker} from '@react-native-picker/picker';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
@@ -35,12 +36,12 @@ export default function Formulario(){
                         correo:"",
                         carrera:""
                     })
-                    console.log(lista) 
+                    //console.log(lista) 
                 }}
                 validationSchema={validations}
                 validate={(values)=>{
                     setAlumno(values)
-                    console.log(alumno)
+                    //console.log(alumno)
                 }}
             >
             {
