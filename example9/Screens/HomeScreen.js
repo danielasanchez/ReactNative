@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, View, FlatList, TouchableOpacity, Image} from 'react-native';
-import {SearchBar} from 'react-native-elements';
+import { SearchBar } from '@rneui/themed';
+//import {SearchBar} from 'react-native-elements';
 import Constants from 'expo-constants';
 
 const HomeScreen = ({navigation}) => {
@@ -26,7 +27,7 @@ const HomeScreen = ({navigation}) => {
     
             setLista(Search);
             setTotal(Search.length)
-            console.log(Search);
+            //console.log(Search);
           });
       };
      

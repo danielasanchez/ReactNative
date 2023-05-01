@@ -15,7 +15,7 @@ const DetailScreen = ({route}) => {
             }).then(resultado=>
             {
                 setDatos(resultado)
-                console.log(datos);
+                //console.log(datos);
             });
 
     },[])
