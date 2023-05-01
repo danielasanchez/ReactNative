@@ -12,10 +12,10 @@ const Body = () => {
 export default Body
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#1fcb44',
-        alignItems: 'center',
-        justifyContent: 'center',
+    container:{
+        backgroundColor:'#1fcb44',
+        alignItems:'center',
+        justifyContent:'center',
         flex:2//height:'50%',
     },   
 })

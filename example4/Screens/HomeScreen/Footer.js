@@ -12,10 +12,10 @@ const Footer = () => {
 export default Footer
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#4afb6f',
-        alignItems: 'center',
-        justifyContent: 'center',
+    container:{
+        backgroundColor:'#4afb6f',
+        alignItems:'center',
+        justifyContent:'center',
         flex:1//height:'25%',
     },   
 })
